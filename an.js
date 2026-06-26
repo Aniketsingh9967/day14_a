@@ -47,7 +47,7 @@ app.put("/students/:id", (req, res) => {
     res.json({
         message: "record update",
         student
-    });
+    })
 });
 
 app.delete("/students/:id", (req, res) => {
@@ -60,7 +60,7 @@ app.delete("/students/:id", (req, res) => {
     res.json({
         massage: "record deleted",
         students
-    })
+    });
 });
 
 app.listen(3000, () => {
